@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+  background-color: #141414;
+  color: white;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Montserrat;
+  text-align: center;
+  margin: 0;
+  left: 0;
+}
+#header{
+  margin: auto;
+  width: 800px;
+}
+#h1{
+  color: white;
+  left: 0;
+  font-size: 140px;
+  margin-top: 60px;
+ background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+h2{
+  font-size: 60px;
+  margin-top: -70px;
+}
+h3{
+  color: #d1d1d1;
+  font-size: 20px;
+}
+button{
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 0;
+  font-size: 35px;
+  margin-top: -10px;
+  height: 60px;
+  width: 500px;
+  font-family: Montserrat;
+  font-weight: 400;
+  cursor: pointer;
+  transition-duration: 0.45s;
+}
+button:hover{
+  box-shadow: 10px 10px 0 white;
+  background: #ff0035;
+  border: 2px solid #141414;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  font-family: Montserrat;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left:0;
+  right: 0;
+  background:rgba(1,1,1,0.1);
+  backdrop-filter: blur(2px) opacity(100%);
+}
+
+/* Links inside the navbar */
+.navbara {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+.navbar img {
+  float: left;
+  text-align: center;
+  width: 48px;
+  padding: 0;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  text-decoration: underline #ff0035;
+  text-underline-offset: 5.5px;
+  text-decoration-thickness: 2px;
+  color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  text-decoration: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition-duration: 0.45s;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  /*background: linear-gradient(90deg, #ff0035, #ff9621);*/
+  background: #ff0035;
+  text-decoration: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+navbar a:hover{
+  background-color: #292929;
+}
